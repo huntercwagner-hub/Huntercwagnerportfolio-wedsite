@@ -1,81 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Trebuchet Project | Structural Design & Analysis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trebuchet Project | UWF Engineering Design</title>
 <style>
-body {font-family:'Segoe UI',sans-serif;background:#f9fafb;color:#1f2937;margin:0;}
-header{background:#1e3a8a;color:#fff;padding:1.5rem;text-align:center;}
-main{max-width:900px;margin:2rem auto;padding:0 1rem;}
-h2{border-bottom:3px solid #2563eb;display:inline-block;margin-bottom:1rem;}
-section{margin-bottom:1.5rem;}
-img{max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin:0.5rem 0;}
-a.button{display:inline-block;background:#2563eb;color:#fff;padding:0.5rem 1rem;border-radius:5px;text-decoration:none;margin-top:0.5rem;}
+body {font-family: 'Segoe UI', sans-serif; background:#f9fafb; color:#1f2937; margin:0;}
+header{background:#1e3a8a; color:white; padding:1.5rem; text-align:center;}
+main{max-width:900px; margin:2rem auto; padding:0 1rem;}
+h2{border-bottom:3px solid #2563eb; display:inline-block; margin-bottom:1rem;}
+img{max-width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:1rem;}
+section{margin-bottom:2rem;}
+a.button{display:inline-block; background:#2563eb; color:#fff; padding:0.5rem 1rem; border-radius:5px; text-decoration:none; margin-top:1rem;}
 a.button:hover{background:#1e40af;}
-ul{margin:0.5rem 0 0.5rem 1.3rem;}
-footer{text-align:center;background:#1e3a8a;color:#fff;padding:1rem;margin-top:2rem;}
+footer{text-align:center; background:#1e3a8a; color:white; padding:1rem; margin-top:2rem;}
 </style>
 </head>
 <body>
 <header>
-  <h1>Trebuchet — Structural Design & Simulation</h1>
-  <p>Team project — Structure lead & CAD / analytical modeling</p>
+  <h1>Trebuchet Design & Structural Analysis</h1>
+  <p>University of West Florida | Engineering Design Project</p>
 </header>
 
 <main>
   <section>
-    <h2>Project Summary</h2>
-    <p><strong>Goal:</strong> Design, build, and validate a trebuchet capable of firing a projectile ~250 yards. Produce a ballistic firing chart, create analytical and numerical solvers to quickly evaluate design changes, and deliver a test-ready structure in one month.</p>
-    <p><strong>My role:</strong> Structure team lead — performed all structural math, hand calculations, FEA validation, CAD design, and produced Excel solvers to parameterize geometry and loads. I also supported fabrication and test setup.</p>
+    <h2>Project Overview</h2>
+    <p><b>Objective:</b> The goal of this project was to design, build, and test a fully functional trebuchet capable of launching a projectile over <b>250 yards</b>. The challenge combined physics, structural mechanics, and practical engineering to create a precise and repeatable machine for long-range projectile motion.</p>
+    <p>Our team was tasked with developing a comprehensive design that incorporated <b>analytical calculations</b>, <b>CAD modeling</b>, and <b>finite element analysis (FEA)</b> to verify structural safety and performance. The entire build—from initial concept to successful test launches—was completed within a one-month time frame.</p>
+    <img src="../assets/trebuchet_photo1.jpg" alt="Trebuchet prototype assembly during construction">
   </section>
 
   <section>
-    <h2>Technical Highlights</h2>
+    <h2>Design and Development</h2>
+    <p>As a member of the <b>structure team</b>, my role focused on the design, mathematical modeling, and CAD development of the trebuchet’s framework and throwing arm. I performed all structural load and stress calculations to ensure the frame and pivot assembly could safely support the counterweight and launch forces.</p>
+    <p>The design was developed using <b>SolidWorks</b> to create both detailed and assembly-level models. Every component—from the throwing arm to the base supports—was dimensioned for manufacturability using standard wood sections. Structural integrity and performance were validated using <b>ANSYS</b> for static and dynamic loading scenarios.</p>
     <ul>
-      <li>Performed detailed structural calculations (bending, shear, deflection, and connection sizing) for spars, pivot supports, and sling attachments.</li>
-      <li>Modeled full assembly in SolidWorks and generated detail drawings for rapid fabrication.</li>
-      <li>Validated structural members and critical connections with Finite Element Analysis (FEA) — checked stress concentrations and dynamic deflection under launch loads.</li>
-      <li>Created Excel solver(s) to quickly iterate on arm length, counterweight, sling length, and predicted range — saved the team many design cycles during the one-month build.</li>
-      <li>Developed ballistic firing chart from projectile motion coupled with release dynamics to target the 250 yd requirement.</li>
+      <li><b>Software Tools:</b> SolidWorks (3D modeling), ANSYS (FEA analysis), Excel (data processing and equations)</li>
+      <li><b>Design Focus:</b> Arm stiffness, pivot reaction forces, load path optimization, and stability under counterweight release</li>
+      <li><b>Construction:</b> Wood and steel hybrid frame with adjustable counterweight attachment</li>
     </ul>
+    <img src="../assets/trebuchet_photo2.jpg" alt="Trebuchet SolidWorks CAD model">
   </section>
 
   <section>
-    <h2>Testing & Results</h2>
-    <p>Prototype assembled and fired; measured ranges were compared to solver predictions and FEA verified that peak stresses remained below allowable limits with the chosen materials and safety factors. The structure performed reliably during repeated launches.</p>
+    <h2>Simulation and Ballistic Analysis</h2>
+    <p>Using analytical methods, I modeled the trebuchet’s throwing motion to estimate launch velocity and projectile trajectory. These calculations formed the basis of a <b>ballistic firing chart</b>, predicting projectile range across various release angles and counterweight ratios.</p>
+    <p>The structure was validated through <b>FEA simulations</b> in ANSYS, ensuring the arm, axle supports, and base experienced stresses well below material limits. The Excel-based solver used during design was included within the final report to show parameter sensitivity for key variables such as arm ratio, sling length, and projectile mass.</p>
+    <img src="../assets/trebuchet_photo3.jpg" alt="Trebuchet launch setup">
   </section>
 
   <section>
-    <h2>Files & Media</h2>
-    <p>Upload these files into your repository’s <code>assets/</code> folder and ensure filenames match:</p>
-    <ul>
-      <li><code>assets/trebuchet_report.pdf</code> — final written report (if available)</li>
-      <li><code>assets/trebuchet_photo1.jpg</code>, <code>assets/trebuchet_photo2.jpg</code>, <code>assets/trebuchet_photo3.jpg</code> — photos from build / test</li>
-      <li><code>assets/trebuchet_solver.xlsx</code> — Excel solver(s) you made for parameter studies</li>
-    </ul>
+    <h2>Testing and Results</h2>
+    <p>The completed trebuchet was tested under multiple loading conditions to measure range, accuracy, and structural behavior. Initial launches achieved distances approaching the <b>250-yard target</b>, with minimal frame deflection and stable projectile release. The analytical predictions closely matched observed results, validating both the design and simulation models.</p>
+    <p>Throughout the project, rapid iteration and teamwork were key. The ability to integrate theoretical analysis, CAD design, and real-world testing allowed the team to meet tight deadlines and produce a reliable, high-performing mechanical system.</p>
+  </section>
 
-    <p>Example quick links:</p>
+  <section>
+    <h2>Project Documentation</h2>
+    <p>The final report includes detailed design methodology, calculations, simulation results, CAD drawings, and the Excel solver used during the analytical phase of the project. You can view the complete report below:</p>
     <a class="button" href="../assets/trebuchet_report.pdf" target="_blank">📄 View Final Report (PDF)</a>
-    <a class="button" href="../assets/trebuchet_solver.xlsx" target="_blank">📊 Download Excel Solver</a>
-
-    <div>
-      <img src="../assets/trebuchet_photo1.jpg" alt="Trebuchet assembly">
-      <img src="../assets/trebuchet_photo2.jpg" alt="Launch test">
-      <img src="../assets/trebuchet_photo3.jpg" alt="CAD model & laser-cut parts (if any)">
-    </div>
   </section>
 
   <section>
-    <h2>What I Learned</h2>
-    <p>Rapid structural iteration under schedule pressure, translating hand calculations into CAD and FEA checks, practical connection design for cyclic loads, and packaging analytical solvers for fast team-level decision making.</p>
+    <h2>Gallery</h2>
+    <img src="../assets/trebuchet_photo1.jpg" alt="Trebuchet frame during construction">
+    <img src="../assets/trebuchet_photo2.jpg" alt="SolidWorks CAD rendering of trebuchet design">
+    <img src="../assets/trebuchet_photo3.jpg" alt="Completed trebuchet during field testing">
   </section>
 
   <p><a class="button" href="../projects.html">← Back to Projects</a></p>
 </main>
 
 <footer>
-  © 2025 Hunter Wagner — Trebuchet Team
+  © 2025 Hunter Wagner | University of West Florida
 </footer>
 </body>
 </html>
