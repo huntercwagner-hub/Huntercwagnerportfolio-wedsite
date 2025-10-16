@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hunter Wagner | Engineering Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e3a8a;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 3px solid #2563eb;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      font-size: 1.05rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+    .project-card a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact a {
+      color: #1e3a8a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      background: #1e3a8a;
+      color: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hunter Wagner</h1>
+    <p>Engineering Student | University of West Florida</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm an Engineering student at the University of West Florida with interests in design, materials testing, and systems analysis.
+        I enjoy applying technical knowledge through hands-on projects and using engineering principles to solve real-world problems.
+      </p>
+    </section>
+
+    <section class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Project Title Example</h3>
+          <p>A short description of the project goes here. Explain what it does or what you learned.</p>
+          <a href="#">View on GitHub →</a>
+        </div>
+        <div class="project-card">
+          <h3>Another Project</h3>
+          <p>Brief overview of another project. You can link directly to your repository or a live demo.</p>
+          <a href="#">View on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>
+        📧 Email: <a href="mailto:hunter.wagner@example.com">hunter.wagner@example.com</a><br />
+        💼 <a href="https://www.linkedin.com" target="_blank">LinkedIn</a><br />
+        🧰 <a href="https://github.com" target="_blank">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hunter Wagner. All rights reserved.</p>
+  </footer>
+</body>
+</html>
