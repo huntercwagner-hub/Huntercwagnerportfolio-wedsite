@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hunter Wagner | Projects</title>
+<style>
+body {font-family: 'Segoe UI', sans-serif; margin:0; background:#f9fafb; color:#1f2937;}
+header{background:#1e3a8a; color:#fff; padding:1.5rem; text-align:center;}
+nav{background:#2563eb; text-align:center; padding:0.5rem 0;}
+nav a{color:#fff; text-decoration:none; margin:0 1rem; font-weight:bold;}
+nav a:hover{text-decoration:underline;}
+main{max-width:900px; margin:2rem auto; padding:0 1rem;}
+section{margin-bottom:3rem;}
+h2{border-bottom:3px solid #2563eb; display:inline-block; padding-bottom:0.3rem; margin-bottom:1rem;}
+.projects{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem;}
+.project-card{background:white; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); padding:1.5rem; transition:0.2s;}
+.project-card:hover{transform:translateY(-5px); box-shadow:0 5px 10px rgba(0,0,0,0.15);}
+.project-card img{max-width:100%; border-radius:5px; margin-top:0.5rem;}
+.project-card a{color:#2563eb; text-decoration:none; font-weight:500;}
+footer{text-align:center; background:#1e3a8a; color:#fff; padding:1rem; margin-top:2rem;}
+</style>
+</head>
+<body>
+<header><h1>Hunter Wagner</h1></header>
+<nav><a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="contact.html">Contact</a></nav>
+<main>
+<section class="projects-section">
+<h2>Projects</h2>
+<div class="projects">
+<div class="project-card">
+<h3>PLA Bending Test</h3>
+<p>Analysis of flexural strength and modulus of 3D-printed PLA beams.</p>
+<img src="assets/project1.png" alt="PLA Bending Test">
+<a href="assets/sample_report.pdf" target="_blank">Download Report</a>
+</div>
+<div class="project-card">
+<h3>RC Jet Turbine</h3>
+<p>Simulation and parameter calculation for a miniature turbine engine.</p>
+<img src="assets/project2.png" alt="RC Jet Turbine">
+<a href="https://github.com/HunterWagner/RC-Jet-Turbine" target="_blank">View on GitHub</a>
+</div>
+</div>
+</section>
+</main>
+<footer>© 2025 Hunter Wagner. All rights reserved.</footer>
+</body>
+</html>
