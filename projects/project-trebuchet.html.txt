@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trebuchet Project | Structural Design & Analysis</title>
+<style>
+body {font-family:'Segoe UI',sans-serif;background:#f9fafb;color:#1f2937;margin:0;}
+header{background:#1e3a8a;color:#fff;padding:1.5rem;text-align:center;}
+main{max-width:900px;margin:2rem auto;padding:0 1rem;}
+h2{border-bottom:3px solid #2563eb;display:inline-block;margin-bottom:1rem;}
+section{margin-bottom:1.5rem;}
+img{max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin:0.5rem 0;}
+a.button{display:inline-block;background:#2563eb;color:#fff;padding:0.5rem 1rem;border-radius:5px;text-decoration:none;margin-top:0.5rem;}
+a.button:hover{background:#1e40af;}
+ul{margin:0.5rem 0 0.5rem 1.3rem;}
+footer{text-align:center;background:#1e3a8a;color:#fff;padding:1rem;margin-top:2rem;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Trebuchet — Structural Design & Simulation</h1>
+  <p>Team project — Structure lead & CAD / analytical modeling</p>
+</header>
+
+<main>
+  <section>
+    <h2>Project Summary</h2>
+    <p><strong>Goal:</strong> Design, build, and validate a trebuchet capable of firing a projectile ~250 yards. Produce a ballistic firing chart, create analytical and numerical solvers to quickly evaluate design changes, and deliver a test-ready structure in one month.</p>
+    <p><strong>My role:</strong> Structure team lead — performed all structural math, hand calculations, FEA validation, CAD design, and produced Excel solvers to parameterize geometry and loads. I also supported fabrication and test setup.</p>
+  </section>
+
+  <section>
+    <h2>Technical Highlights</h2>
+    <ul>
+      <li>Performed detailed structural calculations (bending, shear, deflection, and connection sizing) for spars, pivot supports, and sling attachments.</li>
+      <li>Modeled full assembly in SolidWorks and generated detail drawings for rapid fabrication.</li>
+      <li>Validated structural members and critical connections with Finite Element Analysis (FEA) — checked stress concentrations and dynamic deflection under launch loads.</li>
+      <li>Created Excel solver(s) to quickly iterate on arm length, counterweight, sling length, and predicted range — saved the team many design cycles during the one-month build.</li>
+      <li>Developed ballistic firing chart from projectile motion coupled with release dynamics to target the 250 yd requirement.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Testing & Results</h2>
+    <p>Prototype assembled and fired; measured ranges were compared to solver predictions and FEA verified that peak stresses remained below allowable limits with the chosen materials and safety factors. The structure performed reliably during repeated launches.</p>
+  </section>
+
+  <section>
+    <h2>Files & Media</h2>
+    <p>Upload these files into your repository’s <code>assets/</code> folder and ensure filenames match:</p>
+    <ul>
+      <li><code>assets/trebuchet_report.pdf</code> — final written report (if available)</li>
+      <li><code>assets/trebuchet_photo1.jpg</code>, <code>assets/trebuchet_photo2.jpg</code>, <code>assets/trebuchet_photo3.jpg</code> — photos from build / test</li>
+      <li><code>assets/trebuchet_solver.xlsx</code> — Excel solver(s) you made for parameter studies</li>
+    </ul>
+
+    <p>Example quick links:</p>
+    <a class="button" href="../assets/trebuchet_report.pdf" target="_blank">📄 View Final Report (PDF)</a>
+    <a class="button" href="../assets/trebuchet_solver.xlsx" target="_blank">📊 Download Excel Solver</a>
+
+    <div>
+      <img src="../assets/trebuchet_photo1.jpg" alt="Trebuchet assembly">
+      <img src="../assets/trebuchet_photo2.jpg" alt="Launch test">
+      <img src="../assets/trebuchet_photo3.jpg" alt="CAD model & laser-cut parts (if any)">
+    </div>
+  </section>
+
+  <section>
+    <h2>What I Learned</h2>
+    <p>Rapid structural iteration under schedule pressure, translating hand calculations into CAD and FEA checks, practical connection design for cyclic loads, and packaging analytical solvers for fast team-level decision making.</p>
+  </section>
+
+  <p><a class="button" href="../projects.html">← Back to Projects</a></p>
+</main>
+
+<footer>
+  © 2025 Hunter Wagner — Trebuchet Team
+</footer>
+</body>
+</html>
