@@ -3,79 +3,189 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hunter Wagner | Home</title>
+<title>Home | Hunter Wagner</title>
 <style>
-body {font-family: 'Segoe UI', sans-serif; margin:0; background:#f9fafb; color:#1f2937;}
-header{background:#1e3a8a; color:#fff; padding:1.5rem; text-align:center;}
-nav{background:#2563eb; text-align:center; padding:0.5rem 0;}
-nav a{color:#fff; text-decoration:none; margin:0 1rem; font-weight:bold;}
-nav a:hover{text-decoration:underline;}
-main{max-width:900px; margin:2rem auto; padding:0 1rem;}
-section{margin-bottom:3rem;}
-h2{border-bottom:3px solid #2563eb; display:inline-block; padding-bottom:0.3rem; margin-bottom:1rem;}
-footer{text-align:center; background:#1e3a8a; color:#fff; padding:1rem; margin-top:2rem;}
- a.button {
-  display: inline-block;
-  background: #2563eb;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 0.5rem;
+body {
+  font-family:'Segoe UI',sans-serif;
+  margin:0;
+  background:#f9fafb;
+  color:#1f2937;
+}
+
+/* Header */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:wrap;
+  background:#1e3a8a;
+  color:white;
+  padding:1rem;
+}
+header img {
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  box-shadow:0 2px 6px rgba(0,0,0,0.3);
+  object-fit:cover;
+}
+header h1 {
+  margin:0;
+}
+header p {
+  margin:0.3rem 0 0;
+  font-size:0.95rem;
+}
+
+/* Navigation */
+nav {
+  background:#2563eb;
+  text-align:center;
+  padding:0.5rem 0;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  margin:0 1rem;
+  font-weight:bold;
+  transition:color 0.3s;
+}
+nav a:hover {
+  text-decoration:underline;
+  color:#dbeafe;
+}
+
+/* Main Layout */
+main {
+  max-width:900px;
+  margin:2rem auto;
+  padding:0 1rem;
+}
+section {
+  margin-bottom:2.5rem;
+}
+h2 {
+  border-bottom:3px solid #2563eb;
+  display:inline-block;
+  padding-bottom:0.3rem;
+  margin-bottom:1rem;
+}
+
+/* Buttons */
+a.button {
+  display:inline-block;
+  background:#2563eb;
+  color:#fff;
+  padding:0.6rem 1.2rem;
+  border-radius:6px;
+  text-decoration:none;
+  margin-top:0.5rem;
+  transition:all 0.3s ease;
 }
 a.button:hover {
-  background: #1e40af;
-} 
+  background:#1e40af;
+  box-shadow:0 4px 12px rgba(37,99,235,0.3);
+}
+
+/* Footer */
+footer {
+  text-align:center;
+  background:#1e3a8a;
+  color:white;
+  padding:1rem;
+  margin-top:2rem;
+  font-size:0.9rem;
+}
 </style>
 </head>
 <body>
-<header><h1>Hunter Wagner</h1></header>
 
-<nav><a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="experience.html">Experience</a> | <a href="skills.html">Skills</a> | <a href="certifications.html">Certifications</a> | <a href="organizations.html">Organizations</a> | <a href="contact.html">Contact</a></nav> 
+<!-- Header -->
+<header>
+  <img src="assets/headshot.jpg" alt="Hunter Wagner Headshot">
+  <div style="text-align:center;">
+    <h1>Hunter Wagner</h1>
+    <p>📞 (850) 748-4843 &nbsp; | &nbsp;
+      ✉️ <a href="mailto:huntercwagner@gmail.com" style="color:#bbdefb;text-decoration:none;">
+      huntercwagner@gmail.com</a>
+    </p>
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="projects.html">Projects</a> |
+  <a href="experience.html">Experience</a> |
+  <a href="skills.html">Skills</a> |
+  <a href="certifications.html">Certifications</a> |
+  <a href="organizations.html">Organizations</a> |
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Main Content -->
 <main>
-<section class="about">
-  <section style="text-align:center; margin-top:1rem;">
-  <img src="assets/headshot.jpg" alt="Hunter Wagner Headshot" style="width:180px;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
-  <h2 style="margin-top:0.5rem;">Welcome!</h2>
-</section>
-<section>
-  <h2>About Me</h2>
-  <p>My name is <b>Hunter Wagner</b>, and I am a Mechanical Engineering student at the <b>University of West Florida</b> with a focus on design, testing, and mechatronic systems. I’m passionate about transforming ideas into working systems through a balance of creativity, analysis, and practical problem-solving.</p>
 
-  <p>Throughout my coursework and projects, I’ve developed strong experience in mechanical design, automation, materials testing, and systems integration. From managing team-based aerospace design challenges like <b>AIAA Design Build Fly</b> to building <b>automated turret and sensor-based robotics systems</b> in mechatronics, I’ve enjoyed applying classroom theory to hands-on engineering work.</p>
+  <!-- Welcome Section -->
+  <section style="text-align:center;">
+    <h2>Welcome!</h2>
+    <p>Hello and welcome to my professional portfolio! I’m a mechanical engineering student passionate about design, manufacturing, and applied mechatronic systems. Here you can explore my projects, experience, and achievements as I continue building my career in engineering innovation.</p>
+  </section>
 
-  <p>I take pride in both technical precision and teamwork — collaborating effectively across disciplines to meet performance goals and deadlines. My approach blends design optimization, analytical modeling, and iteration to develop systems that are functional, efficient, and manufacturable.</p>
-
-  <p>Currently, I’m pursuing opportunities that will let me apply my background in <b>mechanical systems, aerospace design, hvac, manufactoring, and automation</b> to real-world engineering projects, while continuing to grow as a technical leader and problem solver.</p>
-</section>
+  <!-- About Me -->
   <section>
-  <h2>Education</h2>
-  <p><b>University of West Florida</b><br>
-  Bachelor of Science in Mechanical Engineering — Expected Graduation: May 2026</p>
-  <p>Relevant Coursework: Mechatronics Systems, Fluid Dynamics, Materials Testing, Thermodynamics, Ballistics, Robotics, Material Selection, Manufactoring Processes, Dynamic Systems, Solid Waste Mechanics, CAD & FEA Simulation</p>
-</section>
+    <h2>About Me</h2>
+    <p>My name is <b>Hunter Wagner</b>, and I am a Mechanical Engineering student at the <b>University of West Florida</b> with a focus on design, testing, and mechatronic systems. I’m passionate about transforming ideas into working systems through a balance of creativity, analysis, and practical problem-solving.</p>
+
+    <p>Throughout my coursework and projects, I’ve developed strong experience in mechanical design, automation, materials testing, and systems integration. From leading the <b>AIAA Design Build Fly</b> aircraft team to creating <b>automated turret and wall-avoidance robotics systems</b> in mechatronics, I’ve applied theory to hands-on engineering work with tangible results.</p>
+
+    <p>I take pride in both technical precision and teamwork — collaborating effectively across disciplines to meet performance goals and deadlines. My approach blends design optimization, analytical modeling, and iteration to develop systems that are functional, efficient, and manufacturable.</p>
+
+    <p>Currently, I’m pursuing opportunities that allow me to apply my background in <b>mechanical systems, aerospace design, HVAC, manufacturing, and automation</b> to real-world engineering challenges while continuing to grow as a technical leader and problem solver.</p>
+  </section>
+
+  <!-- Education -->
   <section>
-  <h2>My Interests</h2>
-  <p>Outside of my coursework and projects, I have a strong passion for applying engineering principles to real-world challenges. My interests span across several disciplines within mechanical and aerospace engineering, as well as areas that merge design and innovation.</p>
-  <ul>
-    <li><b>Aerospace Systems:</b> Flight dynamics, aircraft design, propulsion, and unmanned aerial systems.</li>
-    <li><b>Mechatronics & Automation:</b> Combining mechanical systems with electronics and programming to create autonomous and adaptive technologies.</li>
-    <li><b>Materials & Manufacturing:</b> Exploring sustainable materials, composite structures, and additive manufacturing methods.</li>
-    <li><b>Defense & Engineering Applications:</b> Understanding military-grade design and testing.</li>
-    <li><b>Design & Innovation:</b> Product design, prototyping, and solving problems through creative mechanical solutions.</li>
-    <li><b>construction:</b>hvac and field work.</li>
-  </ul>
-  <p>Beyond engineering, I enjoy working on personal technical projects, mentoring peers in design and analysis, and continuing to build leadership experience through student organizations like SAME, AIAA, and ASME.</p>
-</section><section>
-  <h2>Résumé</h2>
-  <p>View or download my current résumé for details on my education, experience, and project background.</p>
+    <h2>Education</h2>
+    <p><b>University of West Florida</b><br>
+    Bachelor of Science in Mechanical Engineering — Expected Graduation: <b>May 2026</b></p>
+    <p>Relevant Coursework: Mechatronics Systems, Fluid Dynamics, Materials Testing, Thermodynamics, Ballistics, Robotics, Material Selection, Manufacturing Processes, Dynamic Systems, Solid Mechanics, CAD & FEA Simulation.</p>
+  </section>
 
-  <a class="button" href="assets/HunterWagner_resumeJuly2025.pdf" target="_blank">📄 View Résumé (PDF)</a>
+  <!-- Interests -->
+  <section>
+    <h2>My Interests</h2>
+    <ul>
+      <li><b>Aerospace Systems:</b> Flight dynamics, aircraft design, propulsion, and UAV systems.</li>
+      <li><b>Mechatronics & Automation:</b> Integrating mechanical systems with electronics and programming for automation.</li>
+      <li><b>Materials & Manufacturing:</b> Sustainable materials, composite structures, and additive manufacturing.</li>
+      <li><b>Defense & Engineering Applications:</b> Military-grade design, systems testing, and reliability analysis.</li>
+      <li><b>Design & Innovation:</b> Prototyping and solving mechanical challenges creatively.</li>
+      <li><b>Construction & HVAC:</b> Applied fieldwork and system optimization.</li>
+    </ul>
+  </section>
 
-  <p>If you’d like a copy, you can also <a href="assets/HunterWagner_resumeJuly2025.pdf" download>download it directly here</a>.</p>
-</section>
+  <!-- Résumé -->
+  <section>
+    <h2>Résumé</h2>
+    <p>View or download my current résumé for details on my education, experience, and project background.</p>
+    <a class="button" href="assets/HunterWagner_resumeJuly2025.pdf" target="_blank">📄 View Résumé (PDF)</a>
+    <p>If you’d like a copy, you can also <a href="assets/HunterWagner_resumeJuly2025.pdf" download>download it directly here</a>.</p>
+  </section>
 
 </main>
-<footer>© 2025 Hunter Wagner. All rights reserved.</footer>
+
+<!-- Footer -->
+<footer>
+  <p>Connect with me:</p>
+  <p>
+    <a href="https://linkedin.com/in/your-link" target="_blank" style="color:#bbdefb;text-decoration:none;">LinkedIn</a> |
+    <a href="https://github.com/yourusername" target="_blank" style="color:#bbdefb;text-decoration:none;">GitHub</a> |
+    <a href="mailto:huntercwagner@gmail.com" style="color:#bbdefb;text-decoration:none;">Email</a>
+  </p>
+  <p>© 2025 Hunter Wagner | University of West Florida</p>
+</footer>
+
 </body>
 </html>
