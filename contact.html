@@ -3,30 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hunter Wagner | Contact</title>
+<title>Contact | Hunter Wagner</title>
 <style>
-body {font-family: 'Segoe UI', sans-serif; margin:0; background:#f9fafb; color:#1f2937;}
-header{background:#1e3a8a; color:#fff; padding:1.5rem; text-align:center;}
-nav{background:#2563eb; text-align:center; padding:0.5rem 0;}
-nav a{color:#fff; text-decoration:none; margin:0 1rem; font-weight:bold;}
-nav a:hover{text-decoration:underline;}
-main{max-width:900px; margin:2rem auto; padding:0 1rem;}
-section{margin-bottom:3rem;}
-h2{border-bottom:3px solid #2563eb; display:inline-block; padding-bottom:0.3rem; margin-bottom:1rem;}
-footer{text-align:center; background:#1e3a8a; color:#fff; padding:1rem; margin-top:2rem;}
+body {
+  font-family:'Segoe UI',sans-serif;
+  margin:0;
+  background:#f9fafb;
+  color:#1f2937;
+}
+
+/* Header */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:wrap;
+  background:#1e3a8a;
+  color:white;
+  padding:1rem;
+}
+header img {
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  box-shadow:0 2px 6px rgba(0,0,0,0.3);
+  object-fit:cover;
+}
+header h1 {
+  margin:0;
+}
+header p {
+  margin:0.3rem 0 0;
+  font-size:0.95rem;
+}
+
+/* Navigation */
+nav {
+  background:#2563eb;
+  text-align:center;
+  padding:0.5rem 0;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  margin:0 1rem;
+  font-weight:bold;
+  transition:color 0.3s;
+}
+nav a:hover {
+  text-decoration:underline;
+  color:#dbeafe;
+}
+
+/* Main */
+main {
+  max-width:900px;
+  margin:2rem auto;
+  padding:0 1rem;
+  text-align:center;
+}
+section {
+  margin-bottom:2rem;
+}
+h2 {
+  border-bottom:3px solid #2563eb;
+  display:inline-block;
+  padding-bottom:0.3rem;
+  margin-bottom:1rem;
+}
+a.button {
+  display:inline-block;
+  background:#2563eb;
+  color:#fff;
+  padding:0.6rem 1.2rem;
+  border-radius:6px;
+  text-decoration:none;
+  margin-top:0.5rem;
+  transition:all 0.3s ease;
+}
+a.button:hover {
+  background:#1e40af;
+  box-shadow:0 4px 12px rgba(37,99,235,0.3);
+}
+
+/* Footer */
+footer {
+  text-align:center;
+  background:#1e3a8a;
+  color:white;
+  padding:1rem;
+  margin-top:2rem;
+  font-size:0.9rem;
+}
 </style>
 </head>
 <body>
-<header><h1>Hunter Wagner</h1></header>
-<nav><a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="experience.html">Experience</a>  | <a href="skills.html">Skills</a> | <a href="certifications.html">Certifications</a> | <a href="organizations.html">Organizations</a> | <a href="contact.html">Contact</a></nav>
+
+<!-- Header -->
+<header>
+  <img src="assets/headshot.jpg" alt="Hunter Wagner Headshot">
+  <div style="text-align:center;">
+    <h1>Hunter Wagner</h1>
+    <p>📞 (850) 748-4843 &nbsp; | &nbsp;
+      ✉️ <a href="mailto:huntercwagner@gmail.com" style="color:#bbdefb;text-decoration:none;">huntercwagner@gmail.com</a>
+    </p>
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="projects.html">Projects</a> |
+  <a href="experience.html">Experience</a> |
+  <a href="skills.html">Skills</a> |
+  <a href="certifications.html">Certifications</a> |
+  <a href="organizations.html">Organizations</a> |
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Main -->
 <main>
-<section class="contact">
-<h2>Contact</h2>
-<p>📧 Email: <a href="mailto:huntercwagner@Gmail.com">huntercwagner@gmail.com</a><br>
-💼 <a href="https://www.linkedin.com/in/hunter-wagner-74b529339" target="_blank">LinkedIn</a><br>
-🧰 <a href="https://github.com" target="_blank">GitHub</a></p>
-</section>
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>I'm always open to professional opportunities, collaborations, and project discussions.  
+    Feel free to reach out through any of the platforms below.</p>
+
+    <p>📧 <b>Email:</b> <a href="mailto:huntercwagner@gmail.com">huntercwagner@gmail.com</a><br>
+    💼 <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/hunter-wagner-74b529339" target="_blank">linkedin.com/in/hunter-wagner</a><br>
+    🧰 <b>GitHub:</b> <a href="https://github.com" target="_blank">github.com</a></p>
+
+    <a class="button" href="assets/HunterWagner_resumeJuly2025.pdf" target="_blank">📄 View My Résumé (PDF)</a>
+    <p><a href="assets/HunterWagner_resumeJuly2025.pdf" download>Download Résumé</a></p>
+  </section>
 </main>
-<footer>© 2025 Hunter Wagner. All rights reserved.</footer>
+
+<!-- Footer -->
+<footer>
+  © 2025 Hunter Wagner | University of West Florida
+</footer>
+
 </body>
 </html>
