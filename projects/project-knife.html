@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reverse-Engineered Knife | CAD Project</title>
+<style>
+body {font-family: 'Segoe UI', sans-serif; background:#f9fafb; color:#1f2937; margin:0;}
+header{background:#1e3a8a;color:#fff;padding:1.5rem;text-align:center;}
+main{max-width:900px;margin:2rem auto;padding:0 1rem;}
+h2{border-bottom:3px solid #2563eb;display:inline-block;margin-bottom:1rem;}
+img{max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin-bottom:1rem;}
+section{margin-bottom:1.5rem;}
+a.button{display:inline-block;background:#2563eb;color:#fff;padding:0.5rem 1rem;border-radius:5px;text-decoration:none;margin-top:1rem;}
+a.button:hover{background:#1e40af;}
+ul{margin-left:1.2rem;}
+footer{text-align:center;background:#1e3a8a;color:#fff;padding:1rem;margin-top:2rem;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Reverse-Engineered Knife — CAD Study</h1>
+  <p>Personal CAD project — measurement, modeling, and manufacturing interpretation</p>
+</header>
+
+<main>
+  <section>
+    <h2>Project Overview</h2>
+    <p><strong>Objective:</strong> Create an accurate CAD model of a physical folding knife I own by reverse-engineering key geometry and features. The goal was to recreate the knife in SolidWorks (or your CAD of choice), document manufacturing-relevant dimensions, and prepare the model for potential prototyping or visualization.</p>
+    <p>This project demonstrates measurement technique, attention to tolerance, and CAD modeling skill—useful for part reproduction, tolerance analysis, and design-for-manufacture thinking.</p>
+    <img src="../assets/knife_photo1.jpg" alt="Knife reference photo">
+  </section>
+
+  <section>
+    <h2>Process & Methodology</h2>
+    <p>I followed a structured reverse-engineering workflow:</p>
+    <ul>
+      <li><strong>Reference photos & measurement:</strong> High-resolution photos and caliper measurements for critical dimensions (blade length, thickness, handle contours, pivot spacing).</li>
+      <li><strong>2D sketches & templates:</strong> Traced profiles and produced scaled sketches to capture the blade and handle outline before 3D modeling.</li>
+      <li><strong>3D modeling:</strong> Built the knife as an assembly—blade, handle scales, pivot, and fasteners—in <b>SolidWorks</b> with parametric sketches so dimensions are editable.</li>
+      <li><strong>Feature reconstruction:</strong> Recreated chamfers, fillets, pocket cutouts, and pivot geometry to match the physical part functionally and visually.</li>
+    </ul>
+    <img src="../assets/knife_cad1.jpg" alt="CAD model render of knife">
+  </section>
+
+  <section>
+    <h2>Technical Details</h2>
+    <ul>
+      <li><strong>Key dimensions captured:</strong> Blade length, spine thickness, blade offset, pivot centerline, handle scale thickness, and fastener positions.</li>
+      <li><strong>Tolerancing approach:</strong> Set nominal manufacturing tolerances and called out tight features (pivot bore, fastener holes) for potential prototyping.</li>
+      <li><strong>Materials & finish notes:</strong> Documented likely materials (stainless blade, G10/wood/metal scales) and surface finish cues from photos for manufacturing considerations.</li>
+      <li><strong>Outputs:</strong> SolidWorks part & assembly files (.sldprt/.sldasm) and neutral STEP exports for sharing or downstream CAM work.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Results & Deliverables</h2>
+    <p>The completed deliverables include:</p>
+    <ul>
+      <li>Parametric CAD parts and assembly (SolidWorks format)</li>
+      <li>Neutral STEP/IGES export for compatibility</li>
+      <li>Dimensioned drawings for the blade and handle for prototyping</li>
+      <li>High-resolution renders and reference photos</li>
+    </ul>
+    <a class="button" href="../assets/knife_cad_step.zip" target="_blank">💾 Download STEP & Drawings (ZIP)</a>
+    <a class="button" href="../assets/knife_report.pdf" target="_blank">📄 View Project Notes (PDF)</a>
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <img src="../assets/knife_photo1.jpg" alt="Knife reference photo 1">
+    <img src="../assets/knife_photo2.jpg" alt="Blade profile measurement">
+    <img src="../assets/knife_cad2.jpg" alt="Additional CAD view and exploded assembly">
+  </section>
+
+  <p><a class="button" href="../projects.html">← Back to Projects</a></p>
+</main>
+
+<footer>
+  © 2025 Hunter Wagner
+</footer>
+</body>
