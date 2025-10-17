@@ -3,29 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hunter Wagner | Certifications</title>
+<title>Certifications | Hunter Wagner</title>
 <style>
-body {font-family:'Segoe UI',sans-serif;margin:0;background:#f9fafb;color:#1f2937;}
-header{background:#1e3a8a;color:white;padding:1.5rem;text-align:center;}
-nav{background:#2563eb;text-align:center;padding:0.5rem 0;}
-nav a{color:white;text-decoration:none;margin:0 1rem;font-weight:bold;}
-nav a:hover{text-decoration:underline;}
-main{max-width:900px;margin:2rem auto;padding:0 1rem;}
-section{margin-bottom:2.5rem;}
-h2{border-bottom:3px solid #2563eb;display:inline-block;padding-bottom:0.3rem;margin-bottom:1rem;}
-.cert-card{background:white;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);padding:1rem;margin-bottom:1.5rem;transition:0.2s;}
-.cert-card:hover{transform:translateY(-4px);box-shadow:0 4px 10px rgba(0,0,0,0.15);}
-.cert-card img{max-width:100%;border-radius:8px;margin-top:0.5rem;}
-a.button{display:inline-block;background:#2563eb;color:#fff;padding:0.5rem 1rem;border-radius:5px;text-decoration:none;margin-top:1rem;}
-a.button:hover{background:#1e40af;}
-footer{text-align:center;background:#1e3a8a;color:white;padding:1rem;margin-top:2rem;}
+body {
+  font-family:'Segoe UI',sans-serif;
+  margin:0;
+  background:#f9fafb;
+  color:#1f2937;
+}
+
+/* Header */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:wrap;
+  background:#1e3a8a;
+  color:white;
+  padding:1rem;
+}
+header img {
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  box-shadow:0 2px 6px rgba(0,0,0,0.3);
+  object-fit:cover;
+}
+header h1 {
+  margin:0;
+}
+header p {
+  margin:0.3rem 0 0;
+  font-size:0.95rem;
+}
+
+/* Navigation */
+nav {
+  background:#2563eb;
+  text-align:center;
+  padding:0.5rem 0;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  margin:0 1rem;
+  font-weight:bold;
+  transition:color 0.3s;
+}
+nav a:hover {
+  text-decoration:underline;
+  color:#dbeafe;
+}
+
+/* Main Content */
+main {
+  max-width:900px;
+  margin:2rem auto;
+  padding:0 1rem;
+}
+section {
+  margin-bottom:2.5rem;
+}
+h2 {
+  border-bottom:3px solid #2563eb;
+  display:inline-block;
+  padding-bottom:0.3rem;
+  margin-bottom:1rem;
+}
+
+/* Certificate Cards */
+.cert-card {
+  background:white;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  padding:1.2rem;
+  margin-bottom:1.5rem;
+  transition:transform 0.2s, box-shadow 0.3s;
+}
+.cert-card:hover {
+  transform:translateY(-4px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+.cert-card img {
+  max-width:100%;
+  border-radius:8px;
+  margin-top:0.5rem;
+}
+a.button {
+  display:inline-block;
+  background:#2563eb;
+  color:#fff;
+  padding:0.5rem 1rem;
+  border-radius:5px;
+  text-decoration:none;
+  margin-top:1rem;
+  transition:all 0.3s ease;
+}
+a.button:hover {
+  background:#1e40af;
+  box-shadow:0 4px 12px rgba(37,99,235,0.3);
+}
+
+/* Footer */
+footer {
+  text-align:center;
+  background:#1e3a8a;
+  color:white;
+  padding:1rem;
+  margin-top:2rem;
+  font-size:0.9rem;
+}
 </style>
 </head>
 <body>
+
+<!-- Header -->
 <header>
-  <h1>Hunter Wagner</h1>
+  <img src="assets/headshot.jpg" alt="Hunter Wagner Headshot">
+  <div style="text-align:center;">
+    <h1>Hunter Wagner</h1>
+    <p>📞 (850) 748-4843 &nbsp; | &nbsp;
+      ✉️ <a href="mailto:huntercwagner@gmail.com" style="color:#bbdefb;text-decoration:none;">huntercwagner@gmail.com</a>
+    </p>
+  </div>
 </header>
 
+<!-- Navigation -->
 <nav>
   <a href="index.html">Home</a> |
   <a href="projects.html">Projects</a> |
@@ -36,6 +140,7 @@ footer{text-align:center;background:#1e3a8a;color:white;padding:1rem;margin-top:
   <a href="contact.html">Contact</a>
 </nav>
 
+<!-- Main -->
 <main>
   <section>
     <h2>Professional Certifications</h2>
@@ -66,8 +171,10 @@ footer{text-align:center;background:#1e3a8a;color:white;padding:1rem;margin-top:
   </section>
 </main>
 
+<!-- Footer -->
 <footer>
   © 2025 Hunter Wagner | University of West Florida
 </footer>
+
 </body>
 </html>
