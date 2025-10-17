@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automated Wall-Avoiding Car | Mechatronics Project</title>
+<style>
+body {font-family:'Segoe UI',sans-serif;background:#f9fafb;color:#1f2937;margin:0;}
+header{background:#1e3a8a;color:white;padding:1.5rem;text-align:center;}
+main{max-width:900px;margin:2rem auto;padding:0 1rem;}
+h2{border-bottom:3px solid #2563eb;display:inline-block;margin-bottom:1rem;}
+img{max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin-bottom:1rem;}
+section{margin-bottom:2rem;}
+a.button{display:inline-block;background:#2563eb;color:#fff;padding:0.5rem 1rem;border-radius:5px;text-decoration:none;margin-top:1rem;}
+a.button:hover{background:#1e40af;}
+footer{text-align:center;background:#1e3a8a;color:white;padding:1rem;margin-top:2rem;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Automated Wall-Avoiding Car</h1>
+  <p>University of West Florida | EML 4550 Mechatronics Systems</p>
+</header>
+
+<main>
+  <section>
+    <h2>Project Overview</h2>
+    <p><b>Objective:</b> Design and construct an <b>autonomous car</b> capable of navigating through a hallway or obstacle course while automatically avoiding walls and objects. The system utilized <b>infrared sensors</b> for distance detection and an <b>Arduino microcontroller</b> for real-time decision making and motor control.</p>
+    <p>This was an <b>individual project</b> completed as part of the Mechatronics course. I designed the full circuit layout, wrote the embedded code from scratch, and hand-built the entire system using breadboards, jumper wiring, and a dual-motor drive platform. The final prototype successfully demonstrated wall-avoidance and autonomous path correction during live testing.</p>
+    <img src="../assets/car_photo1.jpg" alt="Automated Car Prototype">
+  </section>
+
+  <section>
+    <h2>Design and Development</h2>
+    <p>The car was constructed using a two-wheel differential drive system powered by <b>DC motors</b> controlled through an <b>L298N motor controller</b>. An <b>Arduino Uno</b> served as the central control unit, receiving inputs from three infrared sensors positioned at the front and sides of the vehicle. The sensors continuously scanned for nearby obstacles and transmitted distance data to the microcontroller for real-time path adjustment.</p>
+    <p>I created the circuit diagram and implemented the full wiring setup on a breadboard, ensuring stable power distribution and reliable sensor feedback. The project did not require CAD modeling, as the emphasis was on the <b>electronic circuit design</b> and programming logic.</p>
+    <ul>
+      <li><b>Hardware Components:</b> Arduino Uno, L298N motor driver, 2 DC motors, IR distance sensors, breadboards, jumper wires, 9V battery</li>
+      <li><b>Software Tools:</b> Arduino IDE (C++), MATLAB (for basic data plotting during calibration)</li>
+      <li><b>Design Features:</b> Real-time obstacle avoidance, forward/reverse logic, independent motor speed control</li>
+    </ul>
+    <img src="../assets/car_photo2.jpg" alt="Circuit and wiring diagram for the automated car">
+  </section>
+
+  <section>
+    <h2>Control Logic and Coding</h2>
+    <p>The car’s control system was entirely coded in <b>C++</b> using the Arduino IDE. I wrote all sensor reading, decision-making, and motor control routines from scratch. The algorithm continuously compared sensor readings to threshold distances and adjusted motor speeds to steer away from detected obstacles.</p>
+    <p>Each iteration of the code improved stability and reduced false positives from reflective surfaces. The final version implemented smoothing filters for sensor data, priority decision layers for directional control, and safety stop logic when obstacles appeared in multiple directions simultaneously.</p>
+    <img src="../assets/car_photo3.jpg" alt="Automated car test run avoiding walls">
+  </section>
+
+  <section>
+    <h2>Testing and Results</h2>
+    <p>During final testing, the car successfully navigated a hallway setup with multiple obstacles, dynamically adjusting its path without manual input. The IR sensors reliably detected walls within a 10–15 cm range, triggering quick directional changes through the motor controller. The system demonstrated consistent performance and fast reaction times under varying lighting conditions.</p>
+    <p>This project deepened my understanding of <b>embedded control systems</b>, <b>sensor integration</b>, and <b>hardware-software interfacing</b>. It also reinforced the importance of debugging timing issues and electrical noise in real-world mechatronic applications.</p>
+  </section>
+
+  <section>
+    <h2>Project Documentation</h2>
+    <p>The final report and complete Arduino source code include circuit diagrams, testing data, and the final obstacle-avoidance algorithm. You can access them below:</p>
+    <a class="button" href="../assets/car_report.pdf" target="_blank">📄 View Final Report (PDF)</a>
+    <a class="button" href="../assets/car_code.zip" target="_blank">💾 Download Source Code (ZIP)</a>
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <img src="../assets/car_photo1.jpg" alt="Autonomous car prototype front view">
+    <img src="../assets/car_photo2.jpg" alt="Circuit board and wiring setup">
+    <img src="../assets/car_photo3.jpg" alt="Testing hallway course">
+  </section>
+
+  <p><a class="button" href="../projects.html">← Back to Projects</a></p>
+</main>
+
+<footer>
+  © 2025 Hunter Wagner | University of West Florida
+</footer>
+</body>
+</html>
