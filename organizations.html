@@ -5,38 +5,123 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Organizations & Leadership | Hunter Wagner</title>
 <style>
-body {font-family:'Segoe UI',sans-serif;margin:0;background:#f9fafb;color:#1f2937;}
-header{background:#1e3a8a;color:white;padding:1.5rem;text-align:center;}
-nav{background:#2563eb;text-align:center;padding:0.5rem 0;}
-nav a{color:white;text-decoration:none;margin:0 1rem;font-weight:bold;}
-nav a:hover{text-decoration:underline;}
-main{max-width:900px;margin:2rem auto;padding:0 1rem;}
-section{margin-bottom:2rem;}
-h2{border-bottom:3px solid #2563eb;display:inline-block;padding-bottom:0.3rem;margin-bottom:1rem;}
-.org-card{background:white;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);padding:1.2rem;margin-bottom:1.5rem;transition:0.2s;}
-.org-card:hover{transform:translateY(-4px);box-shadow:0 4px 10px rgba(0,0,0,0.15);}
-footer{text-align:center;background:#1e3a8a;color:white;padding:1rem;margin-top:2rem;}
+body {
+  font-family:'Segoe UI',sans-serif;
+  margin:0;
+  background:#f9fafb;
+  color:#1f2937;
+}
+
+/* Header with headshot and contact */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:wrap;
+  background:#1e3a8a;
+  color:white;
+  padding:1rem;
+}
+header img {
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  box-shadow:0 2px 6px rgba(0,0,0,0.3);
+  object-fit:cover;
+}
+header h1 {
+  margin:0;
+}
+header p {
+  margin:0.3rem 0 0;
+  font-size:0.95rem;
+}
+
+/* Navigation bar */
+nav {
+  background:#2563eb;
+  text-align:center;
+  padding:0.5rem 0;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  margin:0 1rem;
+  font-weight:bold;
+  transition:color 0.3s;
+}
+nav a:hover {
+  text-decoration:underline;
+  color:#dbeafe;
+}
+
+/* Main body and content */
+main {
+  max-width:900px;
+  margin:2rem auto;
+  padding:0 1rem;
+}
+section {
+  margin-bottom:2rem;
+}
+h2 {
+  border-bottom:3px solid #2563eb;
+  display:inline-block;
+  padding-bottom:0.3rem;
+  margin-bottom:1rem;
+}
+
+/* Organization cards */
+.org-card {
+  background:white;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  padding:1.2rem;
+  margin-bottom:1.5rem;
+  transition:transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+.org-card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  background:#f0f4ff;
+}
+.org-card:hover h3 {
+  color:#2563eb;
+  transition:color 0.2s;
+}
+
+/* Footer */
+footer {
+  text-align:center;
+  background:#1e3a8a;
+  color:white;
+  padding:1rem;
+  margin-top:2rem;
+  font-size:0.9rem;
+}
 </style>
 </head>
 <body>
+
 <header>
-  <header style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;background:#1e3a8a;color:white;padding:1rem;">
-  <img src="assets/headshot.jpg" alt="Hunter Wagner Headshot" style="width:80px;height:80px;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.3);object-fit:cover;">
+  <img src="assets/headshot.jpg" alt="Hunter Wagner Headshot">
   <div style="text-align:center;">
-    <h1 style="margin:0;">Hunter Wagner</h1>
-    <p style="margin:0.3rem 0 0;font-size:0.95rem;">
-      📞 (555) 123-4567 &nbsp; | &nbsp; ✉️ <a href="mailto:hunter.wagner@email.com" style="color:#bbdefb;text-decoration:none;">hunter.wagner@email.com</a>
+    <h1>Hunter Wagner</h1>
+    <p>📞 (555) 123-4567 &nbsp; | &nbsp;
+      ✉️ <a href="mailto:hunter.wagner@email.com" style="color:#bbdefb;text-decoration:none;">
+      hunter.wagner@email.com</a>
     </p>
   </div>
 </header>
 
 <nav>
   <a href="index.html">Home</a> |
-  <a href="projects.html">Projects</a> | <a href="experience.html">Experience</a>  |
+  <a href="projects.html">Projects</a> |
+  <a href="experience.html">Experience</a> |
   <a href="skills.html">Skills</a> |
   <a href="certifications.html">Certifications</a> |
   <a href="organizations.html">Organizations</a> |
- 
   <a href="contact.html">Contact</a>
 </nav>
 
@@ -51,20 +136,20 @@ footer{text-align:center;background:#1e3a8a;color:white;padding:1rem;margin-top:
       <h3>Society of American Military Engineers (SAME)</h3>
       <p><b>Position:</b> Chapter President</p>
       <p><b>Term:</b> January 2024 – Present</p>
-      <p>As president of the UWF chapter, I led the development of a student branch to connect students with defense, civil, and environmental engineering professionals. Responsibilities included coordinating guest speakers, Managing partnerships with local SAME posts, leading 5 other officers, attending monthly professional meetings, and leading volunteer and outreach initiatives for campus-wide events.</p>
+      <p>As president of the UWF chapter, I led the development of a student branch to connect students with defense, civil, and environmental engineering professionals. Responsibilities included coordinating guest speakers, managing partnerships with local SAME posts, leading five officers, attending monthly professional meetings, and organizing volunteer and outreach initiatives for campus events.</p>
     </div>
 
     <div class="org-card">
       <h3>American Institute of Aeronautics and Astronautics (AIAA)</h3>
       <p><b>Position:</b> Officer of Professional Relations</p>
       <p><b>Term:</b> Summer 2024 – Summer 2025</p>
-      <p>Served as the primary liaison between students and industry professionals, organizing speaker sessions, company tours, other events. Contributed to the AIAA Design Build Fly team and helped strengthen collaboration between AIAA and UWF’s mechanical engineering department.</p>
+      <p>Served as the primary liaison between students and industry professionals, organizing speaker sessions, company tours, and career development events. Contributed to the AIAA Design Build Fly team and helped strengthen collaboration between AIAA and UWF’s mechanical engineering department.</p>
     </div>
 
     <div class="org-card">
       <h3>American Society of Mechanical Engineers (ASME)</h3>
       <p><b>Member</b></p>
-      <p>Participated in chapter meetings, technical workshops, and student design competitions to enhance professional growth and stay connected with mechanical engineering advancements and networking opportunities.</p>
+      <p>Participated in chapter meetings, technical workshops, and student design competitions to enhance professional growth and stay connected with advancements in mechanical engineering and related technologies.</p>
     </div>
   </section>
 </main>
