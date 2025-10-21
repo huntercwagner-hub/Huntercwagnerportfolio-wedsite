@@ -14,6 +14,18 @@ section{margin-bottom:2rem;}
 a.button{display:inline-block; background:#2563eb; color:#fff; padding:0.5rem 1rem; border-radius:5px; text-decoration:none; margin-top:1rem;}
 a.button:hover{background:#1e40af;}
 footer{text-align:center; background:#1e3a8a; color:white; padding:1rem; margin-top:2rem;}
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  gap:1rem;
+}
+.gallery img {
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+  transform:scale(1.05);
+  box-shadow:0 6px 12px rgba(0,0,0,0.15);
+}
 </style>
 </head>
 <body>
@@ -44,7 +56,7 @@ footer{text-align:center; background:#1e3a8a; color:white; padding:1rem; margin-
     <h2>Performance and Results</h2>
     <ul>
       <li>Top speed: <b>58 mph</b> (FlySky 2826C V2 motor, 13x11 propeller)</li>
-      <li>Takeoff distance: <b>< 20 ft</b></li>
+      <li>Takeoff distance: <b>&lt; 20 ft</b></li>
       <li>Flight time: <b>5 minutes</b> (3200 mAh LiPo)</li>
       <li>Lap time: <b>~50 seconds</b> fully loaded</li>
       <li>All tests confirmed structure passed the AIAA safety inspection (wingtip load & structural tests)</li>
@@ -62,11 +74,24 @@ footer{text-align:center; background:#1e3a8a; color:white; padding:1rem; margin-
   </section>
 
   <section>
+    <h2>Gallery</h2>
+    <p>Below are images from the design, fabrication, and testing stages of the Scorpion project.</p>
+    <div class="gallery">
+      <img src="../assets/dbfphoto2.jpeg" alt="Composite fuselage fabrication process">
+      <img src="../assets/dbfphoto3.jpeg" alt="Laser-cut wing ribs">
+      <img src="../assets/dbfphoto4.jpeg" alt="Wing assembly and bonding">
+      <img src="../assets/dbfphoto5.jpeg" alt="Ground test before flight">
+      <img src="../assets/dbfphoto6.jpeg" alt="Flight testing day at UWF field">
+    </div>
+  </section>
+
+  <section>
     <h2>Project Documentation</h2>
     <p>View the full report for detailed methodology, calculations, and testing outcomes.</p>
     <a class="button" href="../assets/dbfreport.pdf" target="_blank">📄 View Design Report (PDF)</a>
   </section>
-        <p><a class="button" href="../projects.html">← Back to Projects</a></p>
+
+  <p><a class="button" href="../projects.html">← Back to Projects</a></p>
 </main>
 
 <footer>
