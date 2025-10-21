@@ -14,6 +14,9 @@ section{margin-bottom:2rem;}
 a.button{display:inline-block;background:#2563eb;color:#fff;padding:0.5rem 1rem;border-radius:5px;text-decoration:none;margin-top:1rem;}
 a.button:hover{background:#1e40af;}
 footer{text-align:center;background:#1e3a8a;color:white;padding:1rem;margin-top:2rem;}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
+.gallery img{transition:transform 0.3s ease, box-shadow 0.3s ease;}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 6px 12px rgba(0,0,0,0.15);}
 </style>
 </head>
 <body>
@@ -25,49 +28,45 @@ footer{text-align:center;background:#1e3a8a;color:white;padding:1rem;margin-top:
 <main>
   <section>
     <h2>Project Overview</h2>
-    <p><b>Objective:</b> Design and construct an <b>autonomous car</b> capable of navigating through a hallway or obstacle course while automatically avoiding walls and objects. The system utilized <b>infrared sensors</b> for distance detection and an <b>Arduino microcontroller</b> for real-time decision making and motor control.</p>
-    <p>This was an <b>individual project</b> completed as part of the Mechatronics course. I designed the full circuit layout, wrote the embedded code from scratch, and hand-built the entire system using breadboards, jumper wiring, and a dual-motor drive platform. The final prototype successfully demonstrated wall-avoidance and autonomous path correction during live testing.</p>
-    <img src="../assets/car_photo1.jpg" alt="Automated Car Prototype">
+    <p><b>Objective:</b> Design and construct an <b>autonomous wall-avoiding car</b> capable of detecting and navigating around obstacles using <b>infrared sensors</b> and an <b>Arduino microcontroller</b>. The goal was to create a system that could self-correct its path and maneuver through a hallway without user input.</p>
+    <p>This was an <b>individual project</b> for my Mechatronics course. I developed the full circuit design, wiring, and Arduino code manually, testing the vehicle through multiple prototypes to achieve consistent motion and reliable wall detection:contentReference[oaicite:1]{index=1}.</p>
+    <img src="../assets/car1.jpg" alt="Automated Car">
   </section>
 
   <section>
     <h2>Design and Development</h2>
-    <p>The car was constructed using a two-wheel differential drive system powered by <b>DC motors</b> controlled through an <b>L298N motor controller</b>. An <b>Arduino Uno</b> served as the central control unit, receiving inputs from three infrared sensors positioned at the front and sides of the vehicle. The sensors continuously scanned for nearby obstacles and transmitted distance data to the microcontroller for real-time path adjustment.</p>
-    <p>I created the circuit diagram and implemented the full wiring setup on a breadboard, ensuring stable power distribution and reliable sensor feedback. The project did not require CAD modeling, as the emphasis was on the <b>electronic circuit design</b> and programming logic.</p>
+    <p>The car was built on a simple two-wheel differential drive system with <b>DC motors</b> controlled through an <b>L298N motor driver</b>. Three <b>IR distance sensors</b> provided proximity feedback to detect obstacles on the front and sides. The chassis was made from <b>cardboard and tape</b> during initial prototyping due to limited materials, later reinforced with wooden supports for stability.</p>
+    <p>I encountered major challenges with <b>chassis alignment</b>—glue dots and duct tape caused shifting over time, which affected wheel tracking and sensor angle calibration. To solve this, I added a paint stick brace across the base, improving rigidity, though alignment still degraded after repeated testing:contentReference[oaicite:2]{index=2}.</p>
     <ul>
-      <li><b>Hardware Components:</b> Arduino Uno, L298N motor driver, 2 DC motors, IR distance sensors, breadboards, jumper wires, 9V battery</li>
-      <li><b>Software Tools:</b> Arduino IDE (C++), MATLAB (for basic data plotting during calibration)</li>
-      <li><b>Design Features:</b> Real-time obstacle avoidance, forward/reverse logic, independent motor speed control</li>
+      <li><b>Hardware:</b> Arduino Uno, L298N motor driver, 2 DC motors, IR distance sensors, 9V battery</li>
+      <li><b>Tools:</b> Arduino IDE (C++), basic breadboard prototyping</li>
+      <li><b>Design Focus:</b> Sensor placement, straight-line motion, and obstacle-triggered turning logic</li>
     </ul>
     <img src="../assets/car_photo2.jpg" alt="Circuit and wiring diagram for the automated car">
   </section>
 
   <section>
-    <h2>Control Logic and Coding</h2>
-    <p>The car’s control system was entirely coded in <b>C++</b> using the Arduino IDE. I wrote all sensor reading, decision-making, and motor control routines from scratch. The algorithm continuously compared sensor readings to threshold distances and adjusted motor speeds to steer away from detected obstacles.</p>
-    <p>Each iteration of the code improved stability and reduced false positives from reflective surfaces. The final version implemented smoothing filters for sensor data, priority decision layers for directional control, and safety stop logic when obstacles appeared in multiple directions simultaneously.</p>
-    <img src="../assets/car_photo3.jpg" alt="Automated car test run avoiding walls">
+    <h2>Performance Issues and Troubleshooting</h2>
+    <p>The largest issue was <b>inconsistent motor performance</b>. Small variations in battery voltage, motor efficiency, and surface friction caused each run to behave differently. Different battery brands changed torque output, making calibration unpredictable between tests. Duracell batteries performed best in controlled home testing but produced erratic behavior during school trials:contentReference[oaicite:3]{index=3}.</p>
+    <p>Surface type also affected traction and turning angles. Despite tuning code delays and sensor thresholds, the car’s path would drift or overcorrect depending on the floor texture. Wheel alignment degradation from repeated tests further compounded inconsistencies.</p>
+    <p>One major failure occurred when a wheel stopped responding during the final demonstration, preventing proper obstacle avoidance. Post-test inspection revealed a loose wire and uneven power output to one motor.</p>
   </section>
 
   <section>
-    <h2>Testing and Results</h2>
-    <p>During final testing, the car successfully navigated a hallway setup with multiple obstacles, dynamically adjusting its path without manual input. The IR sensors reliably detected walls within a 10–15 cm range, triggering quick directional changes through the motor controller. The system demonstrated consistent performance and fast reaction times under varying lighting conditions.</p>
-    <p>This project deepened my understanding of <b>embedded control systems</b>, <b>sensor integration</b>, and <b>hardware-software interfacing</b>. It also reinforced the importance of debugging timing issues and electrical noise in real-world mechatronic applications.</p>
-  </section>
-
-  <section>
-    <h2>Project Documentation</h2>
-    <p>The final report and complete Arduino source code include circuit diagrams, testing data, and the final obstacle-avoidance algorithm. You can access them below:</p>
-    <a class="button" href="../assets/car_report.pdf" target="_blank">📄 View Final Report (PDF)</a>
-    <a class="button" href="../assets/car_code.zip" target="_blank">💾 Download Source Code (ZIP)</a>
+    <h2>Lessons Learned</h2>
+    <p>This project reinforced key engineering principles including the importance of <b>mechanical stability</b> and <b>component consistency</b> in embedded systems. I learned that even small mechanical misalignments or variations in power delivery can lead to large control errors in autonomous vehicles.</p>
+    <p>Future iterations would use a rigid chassis (wood or plastic), soldered electrical connections, and regulated power delivery to minimize drift and improve repeatability across different surfaces. Despite its issues, the project successfully demonstrated real-time sensor response and motor control logic using fundamental mechatronic systems.</p>
   </section>
 
   <section>
     <h2>Gallery</h2>
-    <img src="../assets/car_photo1.jpg" alt="Autonomous car prototype front view">
-    <img src="../assets/car_photo2.jpg" alt="Circuit board and wiring setup">
-    <img src="../assets/car_photo3.jpg" alt="Testing hallway course">
+    <div class="gallery">
+      <img src="../assets/car2.jpg" alt=" car ">
+     
+    </div>
   </section>
+
+ 
 
   <p><a class="button" href="../projects.html">← Back to Projects</a></p>
 </main>
